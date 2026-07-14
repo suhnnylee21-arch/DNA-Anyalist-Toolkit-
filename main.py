@@ -6,7 +6,7 @@ print('The number of Cytosine in the DNA sequence is', Cytosine)
 total_length = len(dna_sequence)
 print('The total length of the DNA sequence is', total_length)
 gc_percentage = ((Guanine + Cytosine) / total_length) * 100
-print("The GC percentage of the DNA sequence is", gc_percentage)
+print("The GC percentage of the DNA sequence is", round(gc_percentage, 2), "%")
 rna_sequence = dna_sequence.replace('T', 'U')
 print('The RNA sequence is', rna_sequence)
 start_codon_position = dna_sequence.find('ATG')
